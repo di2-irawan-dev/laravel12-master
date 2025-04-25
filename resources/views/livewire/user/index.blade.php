@@ -45,7 +45,7 @@
     </x-drawer>
 
     <!-- FORM MODAL -->
-    <x-modal wire:model="modalForm" title="{{ $title }}" :subtitle="$isEdit ? 'Update ' . $title : 'Create ' . $title">
+    <x-modal wire:model="modalForm" title="{{ $title }}" :subtitle="$isEdit ? 'Update ' . $title : 'Create ' . $title" separator>
         <x-form wire:submit="save">
             <x-input label="Name" icon="o-user" placeholder="Full name" class="input-sm" wire:model="frm.name" />
             <x-input label="Email" icon="o-envelope" placeholder="email@example.com" class="input-sm"
