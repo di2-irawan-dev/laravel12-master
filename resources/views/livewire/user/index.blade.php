@@ -12,8 +12,7 @@
                     <x-badge value="{{ $countFilter }}" class="badge-secondary badge-xs indicator-item" />
                 @endif
             </x-button>
-            <x-button label="Create" @click="$wire.modalForm = true" responsive icon="o-plus"
-                class="btn-sm btn-primary" />
+            <x-button label="Create" @click="$wire.create" responsive icon="o-plus" class="btn-sm btn-primary" />
         </x-slot:actions>
     </x-header>
 
